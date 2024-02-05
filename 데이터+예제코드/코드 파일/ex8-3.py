@@ -7,4 +7,4 @@ print(data)
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 fit=smf.ols('y~program+C(number)+program*C(number)', data).fit()
-sm.stats.anova_lm(fit)
+print(sm.stats.anova_lm(fit))
